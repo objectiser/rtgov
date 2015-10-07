@@ -1,0 +1,13 @@
+{
+  "businessTransactions": {
+    "btm-rtgov": {
+      "description": "Configuration for RTGov",
+      "filter": {
+        "exclusions": [
+          "^/overlord-rtgov/",
+          "^/rtgov-ui/"
+        ]
+      }
+    }
+  }
+}
