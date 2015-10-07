@@ -10,6 +10,7 @@
                 "details": {
                     "btm_source": "org.apache.cxf",
                     "btm_serviceType": "TestOuterService",
+                    "btm_serviceOperation": "TestOuterOperation",
                     "principal": null,
                     "remoteAddr": "127.0.0.1",
                     "remoteHost": "127.0.0.1"
@@ -51,6 +52,7 @@
                                         "details": {
                                             "btm_source": "java.net",
                                             "btm_serviceType": "TestInnerService",
+                                            "btm_serviceOperation": "TestInnerOperation",
                                             "http_method": "POST"
                                         },
                                         "duration": 1396748756,

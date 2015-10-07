@@ -4,13 +4,13 @@
       "description": "Order Management example from RTGov",
       "filter": {
         "inclusions": [
-          "^https?://.*/demo-orders/OrderService$"
+          "^/demo-orders/OrderService$"
         ]
       },
       "processors": [{
         "nodeType": "Consumer",
         "direction": "In",
-        "uriFilter": "^https?://.*/demo-orders/OrderService$",
+        "uriFilter": "^/demo-orders/OrderService$",
         "actions": [{
           "name": "all",
           "type": "{urn:switchyard-quickstart-demo:orders:1.0}submitOrder",
@@ -32,7 +32,7 @@
       },{
         "nodeType": "Consumer",
         "direction": "Out",
-        "uriFilter": "^https?://.*/demo-orders/OrderService$",
+        "uriFilter": "^/demo-orders/OrderService$",
         "actions": [{
           "name": "all",
           "type": "{urn:switchyard-quickstart-demo:orders:1.0}submitOrderResponse",
@@ -42,7 +42,7 @@
       },{
         "nodeType": "Consumer",
         "direction": "Out",
-        "uriFilter": "^https?://.*/demo-orders/OrderService$",
+        "uriFilter": "^/demo-orders/OrderService$",
         "predicate": "XMLHelper.evaluate(\"*[local-name() = 'Envelope']/*[local-name() = 'Body']/*[local-name() = 'Fault']\", values[0]) != null",
         "actions": [{
           "actionType": "SetFault",

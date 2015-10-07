@@ -11,7 +11,7 @@
     "interface" : "http://outer",
     "internal" : false,
     "messageType" : null,
-    "operation" : null,
+    "operation" : "TestOuterOperation",
     "principal" : null,
     "properties" : {
       "gateway" : "HTTP"
@@ -36,7 +36,7 @@
     "interface" : "http://inner",
     "internal" : false,
     "messageType" : null,
-    "operation" : null,
+    "operation" : "TestInnerOperation",
     "principal" : null,
     "properties" : {
       "Accept" : "*/*",
@@ -69,7 +69,7 @@
     "interface" : "http://inner",
     "internal" : false,
     "messageType" : null,
-    "operation" : null,
+    "operation" : "TestInnerOperation",
     "principal" : null,
     "properties" : {
       "gateway" : "HTTP"
@@ -91,7 +91,7 @@
     "interface" : "http://outer",
     "internal" : false,
     "messageType" : null,
-    "operation" : null,
+    "operation" : "TestOuterOperation",
     "principal" : null,
     "properties" : {
       "gateway" : "HTTP"

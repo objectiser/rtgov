@@ -1,0 +1,21 @@
+{
+  "instrumentation": {
+    "java.io": {
+      "description": "Java IO instrumentation",
+      "rules": [{
+        "ruleName": "Java IO PrintWriter Response Append 1",
+        "className": "^java.io.PrintWriter",
+        "methodName": "println",
+        "parameterTypes": [
+          "java.lang.String"
+        ],
+        "location": "ENTRY",
+        "condition": "isOutBufferActive($0)",
+        "actions": [{
+          "type": "FreeFormAction",
+          "action": "appendOutBuffer($0, $1.getBytes(), 0, $1.length(), false)"
+        }]
+      }]
+    }
+  }
+}

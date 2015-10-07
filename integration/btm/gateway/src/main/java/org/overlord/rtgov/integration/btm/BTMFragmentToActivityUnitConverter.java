@@ -116,7 +116,8 @@ public class BTMFragmentToActivityUnitConverter {
 
         // Create pre activity event
         if ((node instanceof Consumer || node instanceof Producer)
-                && node.getDetails().containsKey(BTM_SERVICE_TYPE)) {
+                && node.getDetails().containsKey(BTM_SERVICE_TYPE)
+                && node.getDetails().containsKey(BTM_SERVICE_OPERATION)) {
             processRequest((InteractionNode)node, reqId, au, btxn);
         }
         
@@ -126,7 +127,8 @@ public class BTMFragmentToActivityUnitConverter {
         
         // Create post activity event
         if ((node instanceof Consumer || node instanceof Producer)
-                && node.getDetails().containsKey(BTM_SERVICE_TYPE)) {
+                && node.getDetails().containsKey(BTM_SERVICE_TYPE)
+                && node.getDetails().containsKey(BTM_SERVICE_OPERATION)) {
             processResponse((InteractionNode)node, reqId, respId, au, btxn);
         }
     }

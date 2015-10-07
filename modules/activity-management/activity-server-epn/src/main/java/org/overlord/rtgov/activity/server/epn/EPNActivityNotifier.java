@@ -69,7 +69,7 @@ public class EPNActivityNotifier implements ActivityNotifier {
         }
         
         if (LOG.isLoggable(Level.FINE)) {
-            LOG.fine("Initialize Activity Server to EPN bridge");
+            LOG.fine("Initialize Activity Server to EPN bridge: EPNManager="+_epnManager);
         }
     }
     
