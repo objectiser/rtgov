@@ -5,6 +5,7 @@
       "filter": {
         "exclusions": [
           "^/overlord-rtgov/",
+          "^/overlord-idp/",
           "^/rtgov-ui/"
         ]
       }
